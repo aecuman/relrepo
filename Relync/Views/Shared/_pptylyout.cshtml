@@ -6,7 +6,7 @@
     <title>@ViewBag.Title - Relync.Ug</title>
     <script type="text/javascript" src="http://dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
     @{    @Html.Partial("GoogleAnalytics")}
-   
+
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -41,68 +41,13 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
+       
+
+     
     </div>
-        <footer>
-            <div class="row footer-banner">
-                <div class="col-md-4 text-center">
-                    
-                        <h5>CONTACT US</h5>
 
-                        Relync
+    @Scripts.Render("~/bundles/bootstrap")
 
-                        <br>
-                        P.O. Box 11289
-
-                        <br>
-                        Kampala - Uganda
-
-                        <br>
-                        Bukoto Kezilone Rd.
-
-                        <br>
-                        Tel: 256 704756440/ 256 773038377
-
-                        <br>
-                        relyncug@gmail.com
-                   
-
-
-                   
-                </div>
-            <div class="col-md-4 text-center">
-                <h5>SUPPORT</h5>
-             
-                    About Us
-
-               
-                <br>
-                    Cookie Policy
-                   
-                <br>
-                    Terms & Conditions
-                  
-                <br>
-                    SiteMap
-              
-                
-            </div>
-            <ul class="col-md-4 text-center ">
-                <h5>SOCIAL</h5>
-                <li>
-                    <a href="http://facebook.com/relyncug"><span class="fui-facebook"><span class="btn-tip"></span>Facebook</span></a>
-                </li>
-                <br />
-                <li>
-                    <a href="http://twitter.com/RelyncUg"><span class="fui-twitter"><span class="btn-tip"></span>Twitter</span></a>
-                </li>
-                    </ul>
-    </div>
-    <p class="text-center">&copy; @DateTime.Now.Year - Pesh&Dean (U)</p>
-    </footer>
-   
-
-      @Scripts.Render("~/bundles/bootstrap")
-  
 </body>
 </html>
+

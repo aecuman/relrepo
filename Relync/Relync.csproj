@@ -362,6 +362,8 @@
     <Content Include="Views\Property\AvailEdit.cshtml" />
     <Content Include="Views\Property\Map.cshtml" />
     <Content Include="Views\Property\Edit.cshtml" />
+    <Content Include="Views\Shared\GoogleAnalytics.cshtml" />
+    <Content Include="Views\Shared\_pptylyout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -423,10 +425,4 @@
   </Target>
   <Target Name="AfterBuild">
   </Target> -->
-  <PropertyGroup>
-    <PostBuildEvent>
-      if not exist "$(WebProjectOutputDir)\bin\Roslyn" md "$(WebProjectOutputDir)\bin\Roslyn"
-      start /MIN xcopy /s /y /R "$(OutDir)roslyn\*.*" "$(WebProjectOutputDir)\bin\Roslyn"
-   </PostBuildEvent>
-  </PropertyGroup>
 </Project>
